@@ -36,7 +36,7 @@
             lblCantidad = new Label();
             btnAgendar = new Button();
             btnCancelar = new Button();
-            btnListar = new Button();
+            btnMostrar = new Button();
             lstResultado = new ListBox();
             mktNumero = new MaskedTextBox();
             txtContacto = new TextBox();
@@ -92,7 +92,7 @@
             // 
             // btnAgendar
             // 
-            btnAgendar.Location = new Point(48, 251);
+            btnAgendar.Location = new Point(277, 225);
             btnAgendar.Name = "btnAgendar";
             btnAgendar.Size = new Size(75, 23);
             btnAgendar.TabIndex = 2;
@@ -102,7 +102,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(193, 251);
+            btnCancelar.Location = new Point(369, 225);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 3;
@@ -110,24 +110,24 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // btnListar
+            // btnMostrar
             // 
-            btnListar.Location = new Point(327, 251);
-            btnListar.Name = "btnListar";
-            btnListar.Size = new Size(75, 23);
-            btnListar.TabIndex = 4;
-            btnListar.Text = "&Listar";
-            btnListar.UseVisualStyleBackColor = true;
-            btnListar.Click += btnListar_Click;
+            btnMostrar.Location = new Point(12, 400);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(104, 23);
+            btnMostrar.TabIndex = 4;
+            btnMostrar.Text = "Mostrar Agenda";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.Click += btnListar_Click;
             // 
             // lstResultado
             // 
             lstResultado.BorderStyle = BorderStyle.FixedSingle;
             lstResultado.FormattingEnabled = true;
             lstResultado.ItemHeight = 15;
-            lstResultado.Location = new Point(12, 318);
+            lstResultado.Location = new Point(12, 272);
             lstResultado.Name = "lstResultado";
-            lstResultado.Size = new Size(472, 107);
+            lstResultado.Size = new Size(442, 107);
             lstResultado.TabIndex = 5;
             lstResultado.SelectedIndexChanged += lstResultado_SelectedIndexChanged;
             // 
@@ -153,11 +153,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(492, 482);
+            ClientSize = new Size(479, 482);
             Controls.Add(txtContacto);
             Controls.Add(mktNumero);
             Controls.Add(lstResultado);
-            Controls.Add(btnListar);
+            Controls.Add(btnMostrar);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgendar);
             Controls.Add(lblCantidad);
@@ -169,7 +169,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAgendaContactos";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmAgendaContactos";
+            Text = "Agenda Contactos";
             Load += frmAgendaContactos_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -184,7 +184,7 @@
         private Label lblCantidad;
         private Button btnAgendar;
         private Button btnCancelar;
-        private Button btnListar;
+        private Button btnMostrar;
         private ListBox lstResultado;
         private MaskedTextBox mktNumero;
         private TextBox txtContacto;
