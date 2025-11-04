@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContactos));
             lblAgenda = new Label();
             btnSalir = new Button();
             btnAtras = new Button();
@@ -53,6 +54,7 @@
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnAtras
             // 
@@ -62,6 +64,7 @@
             btnAtras.TabIndex = 2;
             btnAtras.Text = "Átras";
             btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
             // 
             // btnSiguiente
             // 
@@ -71,6 +74,7 @@
             btnSiguiente.TabIndex = 3;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // lstContactos
             // 
@@ -91,8 +95,10 @@
             Controls.Add(btnAtras);
             Controls.Add(btnSalir);
             Controls.Add(lblAgenda);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmContactos";
             Text = "Contactos";
+            Load += frmContactos_Load;
             ResumeLayout(false);
             PerformLayout();
         }

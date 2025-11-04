@@ -148,6 +148,7 @@
             txtContacto.Size = new Size(193, 23);
             txtContacto.TabIndex = 0;
             txtContacto.TextChanged += txtContacto_TextChanged;
+            txtContacto.KeyPress += txtContacto_KeyPress;
             // 
             // frmAgendaContactos
             // 
